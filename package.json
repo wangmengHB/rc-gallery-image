@@ -1,0 +1,36 @@
+{
+  "name": "rc-gallery-image",
+  "version": "0.0.1-rc.1",
+  "description": "image component supports automatic gallery feature",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangmengHB/rc-gallery-image.git"
+  },
+  "keywords": [
+    "gallery",
+    "image"
+  ],
+  "author": "Meng Wang <wangmeng_hb@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wangmengHB/rc-gallery-image/issues"
+  },
+  "homepage": "https://github.com/wangmengHB/rc-gallery-image#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  }
+}
