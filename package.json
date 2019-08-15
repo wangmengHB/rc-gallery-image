@@ -4,7 +4,9 @@
   "description": "image component supports automatic gallery feature",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf lib && rm -rf dist && tsc -declaration & webpack --config ./build/webpack.prod.conf.js",
+    "watch": "webpack --watch --config ./build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --inline --progress --config ./build/webpack.dev.conf.js"
   },
   "repository": {
     "type": "git",
@@ -26,11 +28,19 @@
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
+    "@types/react": "^16.9.1",
+    "@types/react-dom": "^16.8.5",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "ts-loader": "^6.0.4",
     "typescript": "^3.5.3",
     "webpack": "^4.39.1",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.1"
   }
 }
